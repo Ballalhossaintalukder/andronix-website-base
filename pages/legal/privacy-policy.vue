@@ -1,11 +1,12 @@
 <template>
-  <div class="h-full bg-background">
-    <div class="px-12 mt-12">
-      <div class="text-white">
-        <h1 class="font-extrabold text-3xl md:text-4xl lg:text-5xl mb-8">
+  <div class="legal-page bg-background w-full overflow-hidden">
+    <section class="relative max-w-screen-xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xs font-bold uppercase tracking-widest text-primary-500">Legal</p>
+        <h1 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
           Privacy Policy
         </h1>
-        <div class="text-gray-400 prose md:prose-lg prose-yellow">
+        <div class="mt-8 legal-prose text-gray-400 prose md:prose-lg max-w-none">
 
           <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of
             Personal Information if anyone decided to use our Service.</p>
@@ -14,7 +15,7 @@
             will not use or share your information with anyone except as described in this Privacy Policy.</p>
           <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is
             accessible
-            <NuxtLink to="/legal.terms-conditions">here</NuxtLink>
+            <NuxtLink to="/legal/terms-conditions">here</NuxtLink>
             .
           </p>
 
@@ -81,12 +82,21 @@
             elsewhere.</p>
 
           <p class="font-bold text-lg text-white my-3">
+            Payments and payment processors
+          </p>
+          <p>Andronix is distributed primarily through the Google Play Store. All in-app purchases (Premium, Modded OS
+            access, and the Andronix Commands subscription) are processed via <span class="text-white font-bold">Google Play
+              Billing</span>. For purchases made in India, payments are settled through <span class="text-white font-bold">BillDesk
+              Payments Private Limited</span>, an RBI-licensed Payment Aggregator – Cross Border, and remitted to the
+            Andronix Apps bank account. For purchases made through the Andronix Commands web subscription on
+            andronix.app, payments are processed via <a target="_blank" href="https://razorpay.com">Razorpay</a> (with
+            <a target="_blank" href="https://paypal.com">PayPal</a> integrated through Razorpay).</p>
+
+          <p class="font-bold text-lg text-white my-3">
             Purchases made outside the app
           </p>
-          <p>Andronix currently uses <a href="https://razorpay.com">Razorpay</a> as the payment provider along with <a
-            target="_blank"   href="https://paypal.com"
-          >PayPal</a> which is actually integrated within Razorpay. The present purchase flow requires users to add the
-            following details as "Billing Information"</p>
+          <p>For web purchases handled through <a target="_blank" href="https://razorpay.com">Razorpay</a>, the present
+            purchase flow requires users to add the following details as "Billing Information"</p>
           <ul>
             <li>First Name</li>
             <li>Last Name</li>
@@ -171,17 +181,53 @@
             will be able to do necessary actions.</p>
 
 
+          <p class="font-bold text-xl text-white my-6">
+            Your rights under the Digital Personal Data Protection Act, 2023 (India)
+          </p>
+          <p>For users in India, we process personal data in accordance with the Digital Personal Data Protection Act,
+            2023 (the "DPDP Act").</p>
+          <ul>
+            <li><span class="text-white font-bold">Data Fiduciary:</span> Andronix Apps (Amita Shukla, sole proprietor),
+              Lucknow, Uttar Pradesh, India.</li>
+            <li><span class="text-white font-bold">Grievance Officer:</span> Amita Shukla, reachable at <a
+              href="mailto:grievance@andronix.app">grievance@andronix.app</a>, with a response within 30 days.</li>
+            <li><span class="text-white font-bold">Data retention:</span> account data is retained while your account is
+              active and for up to 90 days after deletion, after which it is erased.</li>
+            <li><span class="text-white font-bold">Your rights:</span> you may request access to, correction of, or erasure
+              of your personal data, and you may withdraw consent at any time.</li>
+          </ul>
+          <p>To exercise any of these rights, contact our Grievance Officer at <a
+            href="mailto:grievance@andronix.app">grievance@andronix.app</a>.</p>
+
+          <p class="font-bold text-lg text-white my-3">How to delete your account and data</p>
+          <p>You can request deletion of your account and associated personal data at any time:</p>
+          <ul>
+            <li><span class="text-white font-bold">In the app:</span> open Andronix, go to your Profile / Account
+              settings, and choose "Delete account".</li>
+            <li><span class="text-white font-bold">By email:</span> write to <a
+              href="mailto:grievance@andronix.app">grievance@andronix.app</a> from your registered email address
+              requesting account deletion.</li>
+          </ul>
+          <p>Once verified, your account data is erased from our systems within 90 days, except where we are required to
+            retain certain records to comply with law. Purchases made through Google Play are governed by Google's own
+            data policies.</p>
+
           <p class="font-bold text-lg text-white my-3">Changes to This Privacy Policy</p>
           <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page
             periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on
             this page. These changes are effective immediately after they are posted on this page.</p>
           <p class="font-bold text-lg text-white my-3">Contact Us</p>
           <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a
-            href="mailto:andronix@techriz.com"
-          >andronix@techriz.com</a></p>
+            href="mailto:support@andronix.app"
+          >support@andronix.app</a>.</p>
+          <div class="mt-10 rounded-2xl border border-gray-800 bg-card_background p-6 text-sm text-gray-400 leading-relaxed not-prose">
+            <p class="font-semibold text-gray-200">Andronix Apps · Operated by Amita Shukla</p>
+            <p>555 Kha/29, Bhola Khera, Krishna Nagar, Lucknow, Uttar Pradesh 226023, India</p>
+            <p class="mt-2"><a href="mailto:support@andronix.app">support@andronix.app</a></p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -192,5 +238,32 @@ export default {
 </script>
 
 <style scoped>
+.legal-page {
+  position: relative;
+}
 
+/* Dark-readable prose: secondary body text, white headings/strong, orange links */
+.legal-prose >>> p {
+  color: #9ca3af;
+}
+
+.legal-prose >>> li {
+  color: #9ca3af;
+}
+
+.legal-prose >>> strong,
+.legal-prose >>> b {
+  color: #ffffff;
+}
+
+.legal-prose >>> a,
+.legal-prose >>> a:visited {
+  color: #ff8b25;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.legal-prose >>> a:hover {
+  color: #ffa85c;
+}
 </style>

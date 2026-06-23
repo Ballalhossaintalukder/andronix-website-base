@@ -1,6 +1,12 @@
 {
   "dev": [
     {
+      "name": "Amita Shukla",
+      "position": "Operator & Owner",
+      "quote": "I operate Andronix Apps and oversee its day-to-day running, user support, and compliance.",
+      "photo_url": "https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=BlazerShirt&clotheColor=PastelBlue&eyeType=Default&eyebrowType=Default&mouthType=Smile&skinColor=Light"
+    },
+    {
       "name": "Prakhar Shukla",
       "position": "Developer",
       "quote": "I work on developing the Android app, the backend, the web related stuff, app pipelines and testing.",

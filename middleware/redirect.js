@@ -17,11 +17,27 @@ export default function ({route, redirect}) {
     case "/modded-os":
       return redirect('/products/modded-os')
     case "/refund-policy":
+    case "/refund":
       return redirect('/legal/refund-policy')
     case "/privacy-policy":
+    case "/privacy":
       return redirect('/legal/privacy-policy')
     case "/terms-conditions":
+    case "/terms":
+    case "/terms-of-service":
       return redirect('/legal/terms-conditions')
+    case "/compliance-safety":
+    case "/safety":
+      return redirect('/compliance')
+    case "/faq":
+    case "/faqs":
+      return redirect('/help')
+    case "/about-us":
+      return redirect('/about')
+    case "/contact-us":
+      return redirect('/contact')
+    case "/status":
+      return redirect('https://status.andronix.app')
     case "/restore-purchases/":
       return redirect('/')
     case "/modded-os-gallery":

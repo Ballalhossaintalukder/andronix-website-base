@@ -1,59 +1,70 @@
 <template>
-  <div class="bg-background h-screen w-full bg-top text-white">
+  <div class="profile-page relative bg-background min-h-screen w-full text-white overflow-hidden">
     <loading :active.sync="isLoading"
              background-color="#0F1535"
              color="#ff8b25"
              :is-full-page="true"
     />
-    <div class="mt-20 lg:mt-32 md:mx-24 md:mx-48">
-      <!--  Profile photo    -->
-      <div class="h-20 w-20 border-solid border-5 border-primary-100 rounded-full overflow-hidden mx-auto">
-        <img class="object-cover"
-             :src="userData.photo_url ? userData.photo_url : '/static_images/default_dp.svg'"
-             alt=""
-        >
-      </div>
-      <div class="mt-10 text-center overflow-ellipsis">
-        <p class="font-extrabold text-2xl md:text-3xl">
-          {{ userData.name ? userData.name : 'Anonymous' }}</p>
-        <p class="mt-1 text-gray-500 font-medium text-sm">{{
-            userData.email ? userData.email : 'Not Logged In'
-          }}</p>
-      </div>
 
-      <hr class="border-dashed border-t-1 max-w-sm my-10 mx-auto border-opacity-70 border-gray-600">
+    <!-- atmosphere -->
+    <div class="glow glow-orange profile-glow-1"></div>
+    <div class="glow glow-purple profile-glow-2"></div>
+    <div class="dot-grid absolute inset-0 opacity-60"></div>
 
-      <h3 class="font-black text-2xl mb-12 text-center">Purchases</h3>
+    <div class="relative max-w-screen-xl mx-auto px-6 lg:px-10 pt-24 lg:pt-32 pb-24">
 
-      <div v-if="!isLoading && areNoPurchases"
-           class="my-16 text-center"
-      >
-        <p class="font-bold text-gray-500">We've couldn't find any purchases...</p>
-        <primary-text-button class="my-6" @click="$router.push('/pricing')" label="CHECK OUR PRICING"/>
-      </div>
-
-      <XyzTransition appear-visible xyz="fade small left-100% delay-15">
-        <div class="max-w-screen-sm mx-auto px-6 flex-col space-y-4" xyz="inner staggered fade small">
-          <div v-for="(value, product) in purchaseObject" :key="product" v-if="Object.keys(value).length>0"
-               class="bg-card_background rounded flex justify-center items-center"
+      <!-- ============ PROFILE HEADER ============ -->
+      <div class="max-w-xl mx-auto text-center">
+        <div class="h-24 w-24 rounded-full overflow-hidden mx-auto border-2 border-gray-800 ring-2 ring-primary-500 ring-opacity-30 bg-card_background">
+          <img class="h-full w-full object-cover"
+               :src="userData.photo_url ? userData.photo_url : '/static_images/default_dp.svg'"
+               alt=""
           >
-            <div class="w-2/12 bg-card_background2 py-3 rounded">
-              <h1 class="font-extrabold text-2xl md:text-3xl lg:text-4xl py-3 my-3 text-center"
-                  :class="textColor(product)"
-              >{{
-                  logoText(product)
-                }}</h1>
-            </div>
-            <div class="w-10/12 pl-6 py-3">
-              <div class="text-white">
-                <h4 class="font-extrabold capitalize mb-3">{{ product.replace('_', ' ') }}</h4>
-                <h4 class="text-sm text-gray-400">{{ value.payID }}</h4>
-                <h4 v-if="value.time" class="text-xs mt-2 text-gray-500">{{ value.time }}</h4>
+        </div>
+        <h1 class="mt-6 text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+          {{ userData.name ? userData.name : 'Anonymous' }}
+        </h1>
+        <p class="mt-1 text-sm font-medium text-gray-500 break-words">
+          {{ userData.email ? userData.email : 'Not Logged In' }}
+        </p>
+      </div>
+
+      <!-- ============ PURCHASES ============ -->
+      <div class="mt-16 max-w-screen-sm mx-auto">
+        <div class="text-center max-w-2xl mx-auto">
+          <p class="text-xs font-bold uppercase tracking-widest text-primary-500">Your account</p>
+          <h2 class="mt-3 text-3xl md:text-4xl font-extrabold text-white tracking-tight">Purchases</h2>
+        </div>
+
+        <!-- empty state -->
+        <div v-if="!isLoading && areNoPurchases"
+             class="mt-10 bg-card_background border border-gray-800 rounded-2xl p-8 text-center"
+        >
+          <p class="font-bold text-gray-400">We couldn't find any purchases...</p>
+          <button @click="$router.push('/pricing')"
+                  class="mt-6 inline-flex items-center bg-primary-600 hover:bg-primary-500 rounded-lg px-5 py-2.5 text-white font-bold shadow-lg hover:-translate-y-1 transition transform duration-200">
+            Check our pricing
+          </button>
+        </div>
+
+        <!-- purchases list -->
+        <XyzTransition appear-visible xyz="fade small left-100% delay-15">
+          <div class="mt-10 flex-col space-y-4" xyz="inner staggered fade small">
+            <div v-for="(value, product) in purchaseObject" :key="product" v-if="Object.keys(value).length>0"
+                 class="group bg-card_background border border-gray-800 rounded-2xl p-5 flex items-center gap-5 transition duration-200 hover:-translate-y-1 hover:border-gray-700"
+            >
+              <div class="h-14 w-14 shrink-0 rounded-xl bg-background border border-gray-800 flex items-center justify-center">
+                <span class="font-extrabold text-xl" :class="textColor(product)">{{ logoText(product) }}</span>
+              </div>
+              <div class="min-w-0">
+                <h4 class="font-bold text-white capitalize">{{ product.replace('_', ' ') }}</h4>
+                <p class="mt-1 text-sm text-gray-400 break-words">{{ value.payID }}</p>
+                <p v-if="value.time" class="mt-1 text-xs text-gray-500">{{ value.time }}</p>
               </div>
             </div>
           </div>
-        </div>
-      </XyzTransition>
+        </XyzTransition>
+      </div>
     </div>
   </div>
 </template>
@@ -62,11 +73,9 @@
 
 import Loading from 'vue-loading-overlay'
 import 'vue-loading-overlay/dist/vue-loading.css'
-import PrimaryTextButton from "~/components/base/primaryTextButton";
 
 export default {
   components: {
-    PrimaryTextButton,
     Loading
   },
   created () {
@@ -147,5 +156,41 @@ export default {
 </script>
 
 <style scoped>
+.glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
 
+.glow-orange {
+  background: radial-gradient(circle, rgba(255, 139, 37, 0.30), transparent 70%);
+}
+
+.glow-purple {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.30), transparent 70%);
+}
+
+.profile-glow-1 {
+  width: 460px;
+  height: 460px;
+  top: -160px;
+  left: -120px;
+}
+
+.profile-glow-2 {
+  width: 420px;
+  height: 420px;
+  top: -40px;
+  right: -120px;
+  opacity: 0.7;
+}
+
+.dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 0%, black 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse at 50% 0%, black 30%, transparent 75%);
+}
 </style>

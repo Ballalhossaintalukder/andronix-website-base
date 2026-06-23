@@ -27,9 +27,9 @@
 
         <div class="max-w-md text-sm lg:text-lg bg-opacity-20 bg-red-400 py-3 px-4 text-center rounded text-white">
           <p>We are sorry to inform you that you recent order has failed because of the reason state above. You can
-            retry or reach out to us at <a href="mailto:andronix@techriz.com"
+            retry or reach out to us at <a href="mailto:support@andronix.app"
                                            class="cursor-pointer text-purple-400 font-bold"
-            >andronix@techriz.com</a></p>
+            >support@andronix.app</a></p>
         </div>
 
         <div @click="$router.push('/checkout/buy')">
