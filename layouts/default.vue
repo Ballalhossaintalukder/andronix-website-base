@@ -2,7 +2,7 @@
   <div class="bg-background">
     <landing-header/>
     <nav-bar/>
-    <Nuxt class="lg:max-w-screen-2xl pt-20 mx-auto"/>
+    <Nuxt class="pt-20"/>
     <Footer/>
   </div>
 </template>
