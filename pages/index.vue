@@ -13,30 +13,28 @@
           <!-- Copy -->
           <div class="text-center lg:text-left">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-none tracking-tight">
-              Learn <span class="text-grad">Linux</span><br class="hidden md:block"> on your phone.
+              Learn <span
+                class="text-grad linux-word"
+                v-tippy
+                content="Linux is a free, open-source operating system, like Windows or macOS. It powers millions of computers, phones, and servers, and is used by students, developers, and educators worldwide."
+              >Linux</span><br class="hidden md:block"> on your phone.
             </h1>
 
             <p class="mt-6 text-gray-400 text-base md:text-lg leading-relaxed max-w-md mx-auto lg:mx-0">
               Andronix helps students, developers, and learners install Ubuntu, Debian, and other
-              educational Linux distributions on their Android device — in a sandboxed, no-root environment.
+              educational Linux distributions on their Android device, in a sandboxed, no-root environment.
             </p>
 
             <div class="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
               <a href="https://play.andronix.app" target="_blank" rel="noopener"
-                 class="group flex items-center gap-2.5 bg-primary-600 hover:bg-primary-500 rounded-lg px-4 py-2 shadow-lg hover:-translate-y-1 transition transform duration-200">
+                 class="flex items-center gap-2 bg-primary-600 hover:bg-primary-500 rounded-lg px-5 py-2.5 text-white font-bold text-sm shadow-lg hover:-translate-y-1 transition transform duration-200">
                 <img src="~assets/images/icons/play-store.svg" class="w-4 h-auto" alt="">
-                <div class="text-left leading-tight">
-                  <span class="block text-white text-opacity-80 text-xs font-medium">Get the app on</span>
-                  <span class="block text-white font-bold text-sm">Google Play</span>
-                </div>
+                Get it on Google Play
               </a>
               <a href="https://github.com/AndronixApp" target="_blank" rel="noopener"
-                 class="flex items-center gap-2.5 bg-card_background border border-gray-700 hover:border-gray-600 rounded-lg px-4 py-2 hover:-translate-y-1 transition transform duration-200">
+                 class="flex items-center gap-2 bg-card_background border border-gray-700 hover:border-gray-600 rounded-lg px-5 py-2.5 text-white font-bold text-sm hover:-translate-y-1 transition transform duration-200">
                 <img src="~assets/images/icons/github.svg" class="w-4" alt="">
-                <div class="text-left leading-tight">
-                  <span class="block text-gray-400 text-xs font-medium">Know more on</span>
-                  <span class="block text-white font-bold text-sm">GitHub</span>
-                </div>
+                GitHub
               </a>
             </div>
 
@@ -66,7 +64,7 @@
           Run real Linux distributions
         </h2>
         <p class="mt-4 text-gray-400 md:text-lg">
-          Pick from official distros and Andronix Modded OS — the same selection you see inside the app.
+          Pick from official distros and Andronix Modded OS, the same selection you see inside the app.
         </p>
       </div>
 
@@ -98,7 +96,7 @@
         <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
           Up and running in four steps
         </h2>
-        <p class="mt-4 text-gray-400 md:text-lg">A guided flow with an intuitive UI — copy, configure, connect, done.</p>
+        <p class="mt-4 text-gray-400 md:text-lg">A guided flow with an intuitive UI, copy, configure, connect, done.</p>
       </div>
 
       <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -141,7 +139,7 @@
         <p class="text-xs font-bold uppercase tracking-widest text-primary-500">Use cases</p>
         <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">Who is Andronix for?</h2>
         <p class="mt-4 text-gray-400 md:text-lg">
-          From classrooms to side projects — learners and builders use Andronix to explore Linux anywhere.
+          From classrooms to side projects, learners and builders use Andronix to explore Linux anywhere.
         </p>
       </div>
 
@@ -253,7 +251,7 @@ export default {
         {name: 'Arch', vendor: 'Arch Linux', img: '/static_images/distro/arch.svg', level: 'advanced'}
       ],
       useCases: [
-        {title: 'CS students', description: 'Learn Linux, the command line, and shell scripting for college coursework — right on your phone.'},
+        {title: 'CS students', description: 'Learn Linux, the command line, and shell scripting for college coursework, right on your phone.'},
         {title: 'Developers', description: 'Prototype, test, and run developer tools on the go without carrying a laptop.'},
         {title: 'Educators', description: 'Teach shell scripting and open-source software with an accessible, low-cost setup for every learner.'},
         {title: 'Hobbyists', description: 'Explore distributions, desktop environments, and open-source software for fun and curiosity.'}
@@ -368,6 +366,20 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
+
+.linux-word {
+  position: relative;
+  cursor: help;
+}
+
+.linux-word::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.12em;
+  border-bottom: 3px dotted #ff8b25;
 }
 
 .distro-card:hover {

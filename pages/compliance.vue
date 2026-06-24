@@ -115,7 +115,7 @@ export default {
   name: 'compliance',
   head () {
     return {
-      title: 'Compliance & Safety — Andronix',
+      title: 'Compliance & Safety, Andronix',
       meta: [{
         hid: 'description',
         name: 'description',

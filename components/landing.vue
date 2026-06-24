@@ -14,7 +14,7 @@
         <div xyz="fade small bottom-100% ease-out-back delay-2" class="xyz-in">
           <p class="text-gray-400 lg:text-lg text-center lg:text-left px-8 pt-3 lg:pr-8 lg:pl-0">Andronix helps students,
             developers, and tech learners install Ubuntu, Debian, and other educational Linux distributions on their
-            Android device <strong>— no root required.</strong></p>
+            Android device. <strong>No root required.</strong></p>
 
           <div class="flex flex-wrap mt-8 justify-center lg:justify-start items-center lg:items-start">
             <a target="_blank" href="https://play.andronix.app" class="xyz-in"

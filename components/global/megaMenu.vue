@@ -1,7 +1,7 @@
 <template>
   <nav
-    class="z-20 fixed w-full transition transform duration-200 ease-in-out"
-    :class="!view.atTopOfPage || activeGroup !== null || mobileOpen ? 'bg-background bg-opacity-90 backdrop-filter backdrop-blur border-b border-gray-800' : ''"
+    class="z-20 fixed w-full transition transform duration-200 ease-in-out border-b border-transparent"
+    :class="!view.atTopOfPage || activeGroup !== null || mobileOpen ? 'bg-background bg-opacity-90 backdrop-filter backdrop-blur border-gray-800' : ''"
     @keydown.esc="closeAll"
   >
     <div class="max-w-screen-2xl mx-auto flex px-6 lg:px-8 py-4 items-center">
@@ -20,13 +20,13 @@
           class="relative"
           @mouseenter="group.columns ? openGroup(group.id) : closeNow()"
         >
-          <!--  Direct link (no panel) — external  -->
+          <!--  Direct link (no panel), external  -->
           <a
             v-if="!group.columns && group.to.indexOf('https://') === 0"
             :href="group.to" target="_blank" rel="noopener"
             class="flex items-center px-3 py-2 rounded text-sm font-medium text-gray-200 hover:text-white hover:bg-card_background_accent transition duration-150"
           >{{ group.title }}</a>
-          <!--  Direct link (no panel) — internal  -->
+          <!--  Direct link (no panel), internal  -->
           <NuxtLink
             v-else-if="!group.columns"
             :to="group.to"
@@ -187,14 +187,14 @@
           <!--  Accordion groups  -->
           <div class="divide-y divide-gray-700">
             <div v-for="group in groups" :key="group.id" class="py-1">
-              <!--  Direct link group — external  -->
+              <!--  Direct link group, external  -->
               <a
                 v-if="!group.columns && group.to.indexOf('https://') === 0"
                 :href="group.to" target="_blank" rel="noopener"
                 class="flex items-center w-full px-2 py-3 text-base font-semibold text-white"
                 @click="closeAll"
               >{{ group.title }}</a>
-              <!--  Direct link group — internal  -->
+              <!--  Direct link group, internal  -->
               <NuxtLink
                 v-else-if="!group.columns"
                 :to="group.to"

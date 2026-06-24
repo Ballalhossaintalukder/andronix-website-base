@@ -99,7 +99,7 @@ export default {
       faqs: [
         {
           question: "Is Andronix a hacking app?",
-          answer: "No. Andronix installs official Linux distributions in a sandboxed environment using PRoot. It is an educational tool for learning Linux, development, and open-source software — not a tool for hacking or bypassing device security."
+          answer: "No. Andronix installs official Linux distributions in a sandboxed environment using PRoot. It is an educational tool for learning Linux, development, and open-source software, not a tool for hacking or bypassing device security."
         },
         {
           question: "Does Andronix require root?",

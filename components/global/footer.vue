@@ -8,7 +8,7 @@
         <div class="lg:col-span-4">
           <h3 class="font-extrabold text-2xl text-white">andronix<span class="text-primary-400">.app</span></h3>
           <p class="text-gray-400 text-sm mt-3 leading-relaxed max-w-xs">
-            Learn Linux on your phone. Run Ubuntu, Debian and more on Android — no root required.
+            Learn Linux on your phone. Run Ubuntu, Debian and more on Android, no root required.
           </p>
 
           <div class="text-gray-400 text-sm leading-relaxed mt-6">

@@ -65,7 +65,7 @@
 
           <strong class="font-bold text-white">Andronix Apps is operated by Amita Shukla, based in Lucknow,
             India.</strong> Prakhar Shukla (developer) and Anurag Verma (Linux backend) continue to contribute to the
-          platform. Our mission stays the same as day one — helping students, developers, and curious learners run
+          platform. Our mission stays the same as day one, helping students, developers, and curious learners run
           Linux on the device they already carry, and making open-source software approachable for everyone.
         </p>
       </div>

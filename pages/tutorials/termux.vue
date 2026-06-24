@@ -13,7 +13,7 @@
           Install Linux with <span class="text-grad">Termux</span>
         </h1>
         <p class="mt-6 text-gray-400 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
-          Andronix runs your Linux distribution inside Termux — a free, open-source terminal emulator for Android.
+          Andronix runs your Linux distribution inside Termux, a free, open-source terminal emulator for Android.
           Set up Termux once, paste your Andronix command, and you're running real Linux. No root required.
         </p>
 
@@ -44,7 +44,7 @@
         <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">What is Termux?</h2>
         <p class="mt-4 text-gray-400 leading-relaxed">
           Termux is an Android terminal emulator and Linux environment that runs without root. Andronix uses
-          Termux to download, configure, and launch your chosen distribution inside a sandboxed PRoot environment —
+          Termux to download, configure, and launch your chosen distribution inside a sandboxed PRoot environment,
           which is why you install Termux first, then run your Andronix command inside it.
         </p>
         <p class="mt-4 text-gray-400 leading-relaxed">
@@ -66,7 +66,7 @@
         <h2 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
           Up and running in four steps
         </h2>
-        <p class="mt-4 text-gray-400 md:text-lg">A guided flow — install, copy, configure, connect.</p>
+        <p class="mt-4 text-gray-400 md:text-lg">A guided flow, install, copy, configure, connect.</p>
       </div>
 
       <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -183,7 +183,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Learn how to install a Linux distribution on Android using Termux and Andronix — no root required.'
+          content: 'Learn how to install a Linux distribution on Android using Termux and Andronix, no root required.'
         }
       ]
     }

@@ -44,7 +44,7 @@
           </h2>
           <p class="md:text-lg leading-relaxed">
             Email <a href="mailto:support@andronix.app">support@andronix.app</a> with the subject line
-            <span class="font-mono text-gray-300">Refund Request — [Order ID]</span>. Include your order ID, purchase date, payment
+            <span class="font-mono text-gray-300">Refund Request, [Order ID]</span>. Include your order ID, purchase date, payment
             method (Google Play / Razorpay / PayPal), and a brief reason. We respond within 5 business days. Approved
             refunds are credited back to your original payment method within 10 business days of approval. Currency
             conversion is handled by the original payment processor.
