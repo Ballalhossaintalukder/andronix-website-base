@@ -146,11 +146,11 @@
           </p>
           <div class="mt-8 flex flex-wrap gap-4 justify-center">
             <button @click="$router.push('/checkout/buy/premium')"
-                    class="bg-primary-600 hover:bg-primary-500 rounded-xl px-7 py-3 text-white font-bold shadow-lg hover:-translate-y-1 transition transform duration-200">
+                    class="bg-primary-600 hover:bg-primary-500 rounded-lg px-7 py-3 text-white font-bold shadow-lg hover:-translate-y-1 transition transform duration-200">
               Get Now
             </button>
             <NuxtLink to="/pricing"
-                      class="flex items-center bg-background border border-gray-700 hover:border-gray-600 rounded-xl px-7 py-3 text-white font-bold hover:-translate-y-1 transition transform duration-200">
+                      class="flex items-center bg-background border border-gray-700 hover:border-gray-600 rounded-lg px-7 py-3 text-white font-bold hover:-translate-y-1 transition transform duration-200">
               View pricing
             </NuxtLink>
           </div>

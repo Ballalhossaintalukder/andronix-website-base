@@ -122,7 +122,7 @@
           href="https://play.andronix.app"
           target="_blank"
           rel="noopener"
-          class="text-white cursor-pointer px-4 py-2 bg-primary-600 flex items-center space-x-2 justify-center rounded font-bold text-sm hover:bg-white hover:text-primary-600 hover:-translate-y-1 transition transform duration-300"
+          class="text-white cursor-pointer px-4 py-2 bg-primary-600 flex items-center space-x-2 justify-center rounded-lg font-bold text-sm hover:bg-white hover:text-primary-600 hover:-translate-y-1 transition transform duration-300"
         >
           <svg class="text-current fill-current w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd" />
@@ -249,7 +249,7 @@
             href="https://play.andronix.app"
             target="_blank"
             rel="noopener"
-            class="mt-4 text-white cursor-pointer px-4 py-3 bg-primary-600 flex items-center space-x-2 justify-center rounded font-bold hover:bg-primary-500 transition duration-200"
+            class="mt-4 text-white cursor-pointer px-4 py-3 bg-primary-600 flex items-center space-x-2 justify-center rounded-lg font-bold hover:bg-primary-500 transition duration-200"
           >
             <svg class="text-current fill-current w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd" />
@@ -262,7 +262,7 @@
             <button
               type="button"
               @click="logout"
-              class="w-full px-4 py-3 bg-card_background flex items-center justify-center space-x-2 rounded text-white font-bold hover:bg-background transition duration-200"
+              class="w-full px-4 py-3 bg-card_background flex items-center justify-center space-x-2 rounded-lg text-white font-bold hover:bg-background transition duration-200"
             >
               <svg class="text-white stroke-current w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
@@ -273,12 +273,12 @@
           <div v-else class="mt-3 flex space-x-3">
             <NuxtLink
               to="/auth/register"
-              class="flex-1 text-center px-4 py-2 rounded bg-card_background2 text-white font-medium hover:scale-105 transition transform duration-200"
+              class="flex-1 text-center px-4 py-2 rounded-lg bg-card_background2 text-white font-medium hover:scale-105 transition transform duration-200"
               @click.native="closeAll"
             >Register</NuxtLink>
             <NuxtLink
               to="/auth/login"
-              class="flex-1 text-center px-4 py-2 rounded bg-card_background text-white font-medium hover:scale-105 transition transform duration-200"
+              class="flex-1 text-center px-4 py-2 rounded-lg bg-card_background text-white font-medium hover:scale-105 transition transform duration-200"
               @click.native="closeAll"
             >Login</NuxtLink>
           </div>

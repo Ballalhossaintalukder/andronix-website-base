@@ -190,7 +190,7 @@
                   </div>
                   <div>
                     <button id="checkout_coupon_validate_button" @click="validateCoupon"
-                            class="rounded text-white font-bold text-sm px-4 py-3 bg-primary-600"
+                            class="rounded-lg text-white font-bold text-sm px-4 py-3 bg-primary-600"
                     >APPLY
                     </button>
                   </div>
@@ -217,7 +217,7 @@
                 <FormulateInput
                   type="submit"
                   id="checkout_submit"
-                  :input-class="`w-full rounded font-bold py-3 px-3 mt-4 text-white transition transform duration-300 ${!hasErrors ?'bg-primary-500 opacity-1':'bg-gray-600 opacity-50'}`"
+                  :input-class="`w-full rounded-lg font-bold py-3 px-3 mt-4 text-white transition transform duration-300 ${!hasErrors ?'bg-primary-500 opacity-1':'bg-gray-600 opacity-50'}`"
                   :disabled="hasErrors"
                   :label="isLoading ? 'Loading...' : 'Proceed'"
                 />

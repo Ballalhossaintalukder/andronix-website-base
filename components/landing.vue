@@ -21,7 +21,7 @@
                xyz="fade big left ease-out-back delay-3"
             >
               <div
-                class="min-w-max cursor-pointer bg-primary-600 hover:bg-primary-500 px-5 rounded-xl py-2.5 mt-4 flex mr-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transform transition ease-in-out duration-200"
+                class="min-w-max cursor-pointer bg-primary-600 hover:bg-primary-500 px-5 rounded-lg py-2.5 mt-4 flex mr-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transform transition ease-in-out duration-200"
               >
                 <img
                   src="~assets/images/icons/play-store.svg"

@@ -123,12 +123,12 @@
           </p>
           <div class="mt-8 flex flex-wrap gap-4 justify-center">
             <a href="https://play.andronix.app" target="_blank" rel="noopener"
-               class="flex items-center gap-3 bg-primary-600 hover:bg-primary-500 rounded-xl px-7 py-3 shadow-lg hover:-translate-y-1 transition transform duration-200">
+               class="flex items-center gap-3 bg-primary-600 hover:bg-primary-500 rounded-lg px-7 py-3 shadow-lg hover:-translate-y-1 transition transform duration-200">
               <img src="~assets/images/icons/play-store.svg" class="w-5 h-auto" alt="">
               <span class="text-white font-bold">Download on Google Play</span>
             </a>
             <a href="https://docs.andronix.app" target="_blank" rel="noopener"
-               class="flex items-center bg-background border border-gray-700 hover:border-gray-600 rounded-xl px-7 py-3 text-white font-bold hover:-translate-y-1 transition transform duration-200">
+               class="flex items-center bg-background border border-gray-700 hover:border-gray-600 rounded-lg px-7 py-3 text-white font-bold hover:-translate-y-1 transition transform duration-200">
               Read the docs
             </a>
           </div>
