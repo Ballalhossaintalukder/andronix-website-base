@@ -2,8 +2,7 @@
   <div class="bg-background">
     <landing-header/>
     <nav-bar/>
-    <side-bar/>
-    <Nuxt class="lg:max-w-screen-2xl pt-20 mx-auto"/>
+    <Nuxt class="pt-20"/>
     <Footer/>
   </div>
 </template>
@@ -11,10 +10,9 @@
 <script>
 import {auth} from '~/plugins/firebase'
 import NavBar from "~/components/global/navBar";
-import SideBar from "~/components/global/sideBar";
 
 export default {
-  components: {SideBar, NavBar},
+  components: {NavBar},
   created() {
     this.observeAuthStateChange()
   },
@@ -50,7 +48,7 @@ html {
 }
 
 body {
-  background-color: #0f1535;
+  background-color: #0e0f13;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }

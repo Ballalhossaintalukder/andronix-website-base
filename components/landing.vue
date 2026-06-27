@@ -6,36 +6,33 @@
       >
         <div xyz="fade big top-100% duration-5" class="xyz-in"
         >
-          <h1 class="text-white text-4xl pr-3 lg:text-5xl font-black">The Power of
-            <strong class="text-primary-600">Linux</strong> on
-            Android.</h1>
+          <h1 class="text-white text-4xl pr-3 lg:text-5xl font-black">Learn
+            <strong class="text-primary-600">Linux</strong> on your
+            phone.</h1>
         </div>
 
         <div xyz="fade small bottom-100% ease-out-back delay-2" class="xyz-in">
-          <p class="text-gray-400 lg:text-lg text-center lg:text-left px-8 pt-3 lg:pr-8 lg:pl-0">Run full-fledged
-            Linux
-            Distros right on
-            your
-            Android device <strong>without rooting.</strong></p>
+          <p class="text-gray-400 lg:text-lg text-center lg:text-left px-8 pt-3 lg:pr-8 lg:pl-0">Andronix helps students,
+            developers, and tech learners install Ubuntu, Debian, and other educational Linux distributions on their
+            Android device. <strong>No root required.</strong></p>
 
           <div class="flex flex-wrap mt-8 justify-center lg:justify-start items-center lg:items-start">
             <a target="_blank" href="https://play.andronix.app" class="xyz-in"
                xyz="fade big left ease-out-back delay-3"
             >
               <div
-                class="min-w-max cursor-pointer bg-gradient-to-r from-violet to-primary-600 px-3 hover:bg-white rounded py-1 mt-4 flex mr-4 hover:-translate-y-1.5 transform transition ease-in-out duration-200"
-
+                class="min-w-max cursor-pointer bg-primary-600 hover:bg-primary-500 px-5 rounded-lg py-2.5 mt-4 flex mr-4 shadow-lg hover:-translate-y-1 hover:shadow-xl transform transition ease-in-out duration-200"
               >
                 <img
                   src="~assets/images/icons/play-store.svg"
-                  class="w-5 h-auto mr-4"
+                  class="w-5 h-auto mr-3 self-center"
                   alt=""
                 />
                 <div>
-                  <h5 class="text-white font-sans text-sm font-medium text-left">
+                  <h5 class="text-white text-opacity-80 font-sans text-xs font-medium text-left">
                     Get the app on
                   </h5>
-                  <h2 class="text-white font-sans font-bold text-left">
+                  <h2 class="text-white font-sans font-bold text-left leading-tight">
                     Google Play
                   </h2>
                 </div>
@@ -45,14 +42,14 @@
                xyz="fade big left ease-out-back delay-3"
             >
               <div
-                class="min-w-max cursor-pointer bg-gray-600 px-3 rounded py-1 mt-4 mr-4 flex hover:-translate-y-1.5 transform transition ease-in-out duration-200"
+                class="min-w-max cursor-pointer bg-card_background border border-gray-700 px-5 rounded-xl py-2.5 mt-4 mr-4 flex hover:-translate-y-1 hover:border-gray-600 transform transition ease-in-out duration-200"
               >
-                <img src="~assets/images/icons/github.svg" class="w-5 mr-4" alt=""/>
+                <img src="~assets/images/icons/github.svg" class="w-5 mr-3 self-center" alt=""/>
                 <div>
-                  <h5 class="text-white font-sans text-sm font-medium text-left">
+                  <h5 class="text-gray-400 font-sans text-xs font-medium text-left">
                     Know more on
                   </h5>
-                  <h2 class="text-white font-sans font-bold text-left">GitHub</h2>
+                  <h2 class="text-white font-sans font-bold text-left leading-tight">GitHub</h2>
                 </div>
               </div>
             </a>

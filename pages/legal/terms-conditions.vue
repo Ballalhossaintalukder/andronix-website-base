@@ -1,11 +1,12 @@
 <template>
-  <div class="h-full bg-background">
-    <div class="px-12 mt-12">
-      <div class="text-white">
-        <h1 class="font-extrabold text-3xl md:text-4xl lg:text-5xl mb-8">
+  <div class="legal-page bg-background w-full overflow-hidden">
+    <section class="relative max-w-screen-xl mx-auto px-6 lg:px-10 py-16 lg:py-20">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-xs font-bold uppercase tracking-widest text-primary-500">Legal</p>
+        <h1 class="mt-3 text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
           Terms and Conditions
         </h1>
-        <div class="text-gray-400 prose md:prose-lg prose-yellow">
+        <div class="mt-8 legal-prose text-gray-400 prose md:prose-lg max-w-none">
           <p>By downloading or using the app, these terms will automatically apply to you – you should make sure
             therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app,
             any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code
@@ -75,17 +76,37 @@
             licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it
             from your device.</p>
 
+          <p class="font-bold text-lg text-white my-3">Acceptable Use</p>
+          <p>You agree to use Andronix in compliance with all applicable laws. Andronix must not be used for unauthorized
+            access to computer systems, network attacks, distribution of malware, or any other unlawful activity.
+            Andronix runs Linux distributions in a sandboxed environment and is intended for learning, development, and
+            other lawful purposes only. You are solely responsible for how you use the software and any tools you install
+            within it.</p>
+
+          <p class="font-bold text-lg text-white my-3">Age Requirement</p>
+          <p>You must be at least 13 years old to use Andronix. You must be at least 18 years old (or have the consent of
+            a parent or legal guardian) to make any purchase through Andronix.</p>
+
+          <p class="font-bold text-lg text-white my-3">Governing Law and Jurisdiction</p>
+          <p>These Terms and Conditions are governed by and construed in accordance with the laws of India. You agree
+            that the courts at Lucknow, Uttar Pradesh, India shall have exclusive jurisdiction over any dispute arising
+            out of or in connection with your use of Andronix.</p>
+
+          <p class="text-sm mt-2 text-gray-300">
+            Andronix Apps · Operated by Amita Shukla · 555 Kha/29, Bhola Khera, Krishna Nagar, Lucknow, Uttar Pradesh
+            226023, India.
+          </p>
+
           <p class="font-bold text-lg text-white my-3">Changes to This Terms and Conditions</p>
           <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page
             periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on
             this page. These changes are effective immediately after they are posted on this page.</p>
           <p class="font-bold text-lg text-white my-3">Contact Us</p>
-          <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a
-            href="mailto:andronix@techriz.com"
-          >andronix@techriz.com</a></p>
+          <p>If you have any questions or suggestions about these Terms and Conditions, do not hesitate to contact us at
+            <a href="mailto:support@andronix.app">support@andronix.app</a>.</p>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -96,5 +117,32 @@ export default {
 </script>
 
 <style scoped>
+.legal-page {
+  position: relative;
+}
 
+/* Dark-readable prose: secondary body text, white headings/strong, orange links */
+.legal-prose >>> p {
+  color: #9ca3af;
+}
+
+.legal-prose >>> li {
+  color: #9ca3af;
+}
+
+.legal-prose >>> strong,
+.legal-prose >>> b {
+  color: #ffffff;
+}
+
+.legal-prose >>> a,
+.legal-prose >>> a:visited {
+  color: #ff8b25;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.legal-prose >>> a:hover {
+  color: #ffa85c;
+}
 </style>

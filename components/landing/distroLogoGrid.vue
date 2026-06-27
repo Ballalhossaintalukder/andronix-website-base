@@ -13,24 +13,28 @@
         </div>
       </div>
       <div class="grid grid-cols-4 mt-8 gap-8 justify-center items-center">
-        <img content="Debian Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
-             src="~assets/images/distro/debian.svg" alt="">
         <img content="Ubuntu Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
              src="~assets/images/distro/ubuntu.svg" alt="">
+        <img content="Debian Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
+             src="~assets/images/distro/debian.svg" alt="">
         <img content="Manjaro Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
              src="~assets/images/distro/manjaro.svg" alt="">
-        <img content="Arch Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
-             src="~assets/images/distro/arch.svg" alt="">
         <img content="Fedora Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
              src="~assets/images/distro/fedora.svg" alt="">
-        <img content="Kali Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
-             src="~assets/images/distro/kali.svg" alt="">
         <img content="Void Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
              src="~assets/images/distro/void.svg" alt="">
         <img content="Alpine Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
              src="~assets/images/distro/alpine.svg" alt="">
+        <img content="Kali Linux · For cybersecurity education and authorized security testing"
+             v-tippy class="gray justify-self-center w-9 lg:w-12"
+             src="~assets/images/distro/kali.svg" alt="">
+        <img content="Arch Linux" v-tippy class="gray justify-self-center w-9 lg:w-12"
+             src="~assets/images/distro/arch.svg" alt="">
       </div>
     </div>
+    <p class="text-gray-500 text-xs mt-6 lg:text-right">
+      Kali Linux is provided for cybersecurity education and authorized security testing.
+    </p>
   </div>
 </template>
 
